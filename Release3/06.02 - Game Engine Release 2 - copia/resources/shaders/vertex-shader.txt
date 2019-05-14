@@ -1,0 +1,45 @@
+#version 150
+
+	//vec3 means a vector of 3 positions that will manage x, y, z
+	//vec4 means a vector of 4 positions that will manage RGBA		
+in vec3 vertexPosition;
+in vec4 vertexColor;
+in vec2 vertexUV;
+in vec3 vertexNormal;
+
+	//Send the color of the vertex to the fragment shader
+out vec4 fragmentColor;
+out vec2 fragmentTextureCoordinates;
+out vec3 fragmentNormal;
+out vec3 fragmentPosition;
+
+	//Matrix with the changes to execute
+uniform mat4 modelMatrix;
+uniform mat4 viewMatrix;
+uniform mat4 projectionMatrix;
+uniform vec4 objectColor;
+
+uniform vec2 textureScaleFactor;
+
+uniform mat3 modelNormalMatrix;
+
+void main() {
+		//Multiply the vertex by the model matrix transformation
+	gl_Position = projectionMatrix*viewMatrix*modelMatrix*vec4(vertexPosition, 1);
+
+		//We need to create the output variables that will go to the fragment shader,
+		//so, we assign the in variables to the new out variables	
+		
+		//We define this else because GLSL obligates to use all the input attributes. Otherwise,we need to remove from its definition
+		fragmentColor=vertexColor;	
+		//OpenGL expects the 0.0 coordinate on the y-axis to be on the bottom side of the image, but images usually have 0.0 at the top of the y-axis
+		//Moreover, we multiple by a factor that manage if the texture has to be repeated or not
+	fragmentTextureCoordinates=vec2(vertexUV.x,1.0-vertexUV.y)*textureScaleFactor;
+
+	fragmentNormal = modelNormalMatrix * vertexNormal;
+	fragmentPosition=vec3(modelMatrix * vec4(vertexPosition, 1.0f));
+	
+
+}
+
+

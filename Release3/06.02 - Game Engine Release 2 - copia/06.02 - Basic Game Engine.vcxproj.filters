@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="Ex06.01-Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Geometry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GLSLProgram.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenGLBuffers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ErrorManagement.cpp">
+      <Filter>Source Files\SDL-WINDOWS-ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Source Files\SDL-WINDOWS-ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="InputManager.cpp">
+      <Filter>Source Files\SDL-WINDOWS-ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="FPSLimiter.cpp">
+      <Filter>Source Files\SDL-WINDOWS-ETC</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Collider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MainShip.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Spawner.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TextManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="parserAse.cpp">
+      <Filter>Source Files\ImportObject</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectLoader.cpp">
+      <Filter>Source Files\ImportObject</Filter>
+    </ClCompile>
+    <ClCompile Include="matManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Geometry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GLSLProgram.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLBuffers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ErrorManagement.h">
+      <Filter>Header Files\EXTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="FPSLimiter.h">
+      <Filter>Header Files\EXTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="InputManager.h">
+      <Filter>Header Files\EXTERNAL</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Collider.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MainShip.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spawner.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TextManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SDL_ttf.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectLoader.h">
+      <Filter>Header Files\ImportObject</Filter>
+    </ClInclude>
+    <ClInclude Include="parserAse.h">
+      <Filter>Header Files\ImportObject</Filter>
+    </ClInclude>
+    <ClInclude Include="matManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="resources\scene2D.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="resources\shaders\vertex-shader.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+    <Text Include="resources\shaders\fragment-shader.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{14bcd497-ef85-4e80-b4bf-51315909f275}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{840731db-1169-45e9-a1fd-103bf84ee55a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{dc551160-43a7-4a5d-b740-c259c2a8f7ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SDL-WINDOWS-ETC">
+      <UniqueIdentifier>{88e2d52b-a71b-4372-a51b-e7dbe7b9a196}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\EXTERNAL">
+      <UniqueIdentifier>{cf07efec-9892-476b-9d18-4cc65c22a628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ImportObject">
+      <UniqueIdentifier>{c5c74bee-59ae-41af-a9d8-22d7b14bdb7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ImportObject">
+      <UniqueIdentifier>{967845a0-f72b-4b2d-a990-d91edcdf6d80}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
